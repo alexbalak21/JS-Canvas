@@ -37,6 +37,8 @@ class Rectangle {
     }
 }
 
+//STARTING POINT
+
 let started = false;
 let x = 400;
 let y = 10;
@@ -52,7 +54,7 @@ function animate() {
     anim = requestAnimationFrame(animate);
 }
 
-//MOUVEMENT INPUT
+//MOUVEMENT INPUT AND BASIC LIMIT
 function input() {
     document.addEventListener("keydown", (event) => {
         if (event.key === "ArrowLeft" && rectangle.x > 0) rectangle.x -= 5;
